@@ -21,6 +21,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     port: 9000,
     historyApiFallback: true,
+    writeToDisk: true,
     compress: true,
     before: function(app, server) {
       console.log("'before' callback is here")
